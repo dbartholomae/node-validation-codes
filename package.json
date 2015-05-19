@@ -1,0 +1,35 @@
+{
+  "name": "validation-codes",
+  "version": "1.0.0",
+  "description": "An AMD-module to validate user input both on client and server side returning easily parseable error codes",
+  "keywords": ["requirejs", "client", "validate", "validation"],
+  "homepage": "https://github.com/dbartholomae/node-validation-codes",
+  "bugs": "https://github.com/dbartholomae/node-validation-codes/issues",
+  "license": "MIT",
+  "author": "Daniel Bartholomae <daniel@bartholomae.name>",
+  "main": "lib/ValidatorRules.js",
+  "man": "./doc/index.html",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "2.*",
+    "chai": "2.*",
+    "coffee-script": "1.*",
+    "requirejs": "2.*"
+  },
+  "directories": {
+    "lib": "./lib",
+    "man": "./doc",
+    "example": "./example"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dbartholomae/node-validation-codes.git"
+  },
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "coffee -c -o ./lib ./src",
+    "doc": "codo ./src",
+    "pretest": "npm run build",
+    "test": "mocha --compilers coffee:coffee-script/register"
+  }
+}

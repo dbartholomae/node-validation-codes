@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset='UTF-8'>
+  <title>CoffeeScript API Documentation</title>
+  <script src='../javascript/application.js'></script>
+  <script src='../javascript/search.js'></script>
+  <link rel='stylesheet' href='../stylesheets/application.css' type='text/css'>
+</head>
+  <body>
+    <div id='base' data-path='../'></div>
+<div id='header'>
+  <div id='menu'>
+    <a href='../extra/README.md.html' title='Validation-codes'>
+      Validation-codes
+    </a>
+    &raquo;
+    <a href='../alphabetical_index.html' title='Index'>
+      Index
+    </a>
+    &raquo;
+    <span class='title'>ValidatorRule</span>
+  </div>
+</div>
+    <div id='content'>
+      <h1>
+        Class:
+        ValidatorRule
+      </h1>
+      <table class='box'>
+        <tr>
+          <td>Defined in:</td>
+          <td>src\rules\Rule.coffee</td>
+        </tr>
+      </table>
+      <h2>Overview</h2>
+      <div class='docstring'>
+  <p>A rule to validate input fields</p>
+</div>
+<div class='tags'>
+  <h3>Author:</h3>
+  <ul class='author'>
+    <li>
+      Daniel Bartholomae 
+    </li>
+  </ul>
+</div>
+      <h2>Direct Known Subclasses</h2>
+      <p class='children'>
+        <a href='../class/AndValidatorRule.html'>AndValidatorRule</a>
+        <a href='../class/BlacklistValidatorRule.html'>BlacklistValidatorRule</a>
+        <a href='../class/ExistenceValidatorRule.html'>ExistenceValidatorRule</a>
+        <a href='../class/MaxLengthValidatorRule.html'>MaxLengthValidatorRule</a>
+        <a href='../class/MinLengthValidatorRule.html'>MinLengthValidatorRule</a>
+        <a href='../class/NotValidatorRule.html'>NotValidatorRule</a>
+        <a href='../class/ObjectValidatorRule.html'>ObjectValidatorRule</a>
+        <a href='../class/OrValidatorRule.html'>OrValidatorRule</a>
+        <a href='../class/RegexValidatorRule.html'>RegexValidatorRule</a>
+        <a href='../class/ViolationCodeModifierValidatorRule.html'>ViolationCodeModifierValidatorRule</a>
+      </p>
+      <h2>Instance Method Summary</h2>
+      <ul class='summary'>
+  <li>
+    <span class='signature'>
+      <a href='#setOptions-dynamic'>
+        #
+(void)
+<b>setOptions</b><span>(options)</span>
+      </a>
+    </span>
+    <span class='desc'>
+      Set the options of this rule. 
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#getViolationCodes-dynamic'>
+        #
+(Array&lt;String&gt;)
+<b>getViolationCodes</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      Return all possible violation codes for this rule. 
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#validate-dynamic'>
+        #
+(Array&lt;String&gt;)
+<b>validate</b><span>(value)</span>
+      </a>
+    </span>
+    <span class='desc'>
+      Validate an object and return a list of codes for all rules it violates 
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#isValid-dynamic'>
+        #
+(Boolean)
+<b>isValid</b><span>(value)</span>
+      </a>
+    </span>
+    <span class='desc'>
+      Returns true if a given object is valid 
+    </span>
+  </li>
+</ul>
+      <h2>Constructor Details</h2>
+      <div class='methods'>
+  <div class='method_details'>
+    <p class='signature' id='constructor-dynamic'>
+      #
+(void)
+<b>constructor</b><span>(options)</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>Create a new ValidatorRule. When extending this constructor, set this.options to the default values
+and call super to overwrite all options given as a parameter.</p>
+</div>
+<div class='tags'>
+  <h3>Parameters:</h3>
+  <ul class='param'>
+    <li>
+      <span class='name'>(options)</span>
+      <span class='type'>
+        (
+          <tt>Object</tt>
+        )
+      </span>
+      &mdash;
+      <span class='desc'>An optional list of options </span>
+    </li>
+  </ul>
+</div>
+  </div>
+</div>
+      <h2>Instance Method Details</h2>
+      <div class='methods'>
+  <div class='method_details'>
+    <p class='signature' id='setOptions-dynamic'>
+      #
+(void)
+<b>setOptions</b><span>(options)</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>Set the options of this rule.</p>
+</div>
+<div class='tags'>
+  <h3>Parameters:</h3>
+  <ul class='param'>
+    <li>
+      <span class='name'>(options)</span>
+      <span class='type'>
+        (
+          <tt>Object</tt>
+        )
+      </span>
+      &mdash;
+      <span class='desc'>An optional list of options </span>
+    </li>
+  </ul>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='getViolationCodes-dynamic'>
+      #
+(Array&lt;String&gt;)
+<b>getViolationCodes</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>Return all possible violation codes for this rule.</p>
+</div>
+<div class='tags'>
+  <h3>Returns:</h3>
+  <ul class='return'>
+    <li>
+      <span class='type'></span>
+      (
+        <tt>Array&lt;String&gt;</tt>
+      )
+      &mdash;
+      <span class='desc'>An array of all possible violation codes for this rule. </span>
+    </li>
+  </ul>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='validate-dynamic'>
+      #
+(Array&lt;String&gt;)
+<b>validate</b><span>(value)</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>Validate an object and return a list of codes for all rules it violates</p>
+</div>
+<div class='tags'>
+  <h3>Parameters:</h3>
+  <ul class='param'>
+    <li>
+      <span class='name'>value</span>
+      <span class='type'>
+        (
+          <tt>Object</tt>
+        )
+      </span>
+      &mdash;
+      <span class='desc'>The value to validate </span>
+    </li>
+  </ul>
+  <h3>Returns:</h3>
+  <ul class='return'>
+    <li>
+      <span class='type'></span>
+      (
+        <tt>Array&lt;String&gt;</tt>
+      )
+      &mdash;
+      <span class='desc'>[&#39;&#39;] if the string is valid, an array of all rule violation codes if not </span>
+    </li>
+  </ul>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='isValid-dynamic'>
+      #
+(Boolean)
+<b>isValid</b><span>(value)</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>Returns true if a given object is valid</p>
+</div>
+<div class='tags'>
+  <h3>Parameters:</h3>
+  <ul class='param'>
+    <li>
+      <span class='name'>value</span>
+      <span class='type'>
+        (
+          <tt>Object</tt>
+        )
+      </span>
+      &mdash;
+      <span class='desc'>The object to validate </span>
+    </li>
+  </ul>
+  <h3>Returns:</h3>
+  <ul class='return'>
+    <li>
+      <span class='type'></span>
+      (
+        <tt>Boolean</tt>
+      )
+      &mdash;
+      <span class='desc'>true if the object is valid, false otherwise </span>
+    </li>
+  </ul>
+</div>
+  </div>
+</div>
+    </div>
+    <div id='footer'>
+  May 19, 15 04:30:40 by
+  <a href='https://github.com/coffeedoc/codo' title='CoffeeScript API documentation generator'>
+    Codo
+  </a>
+  2.0.9
+  &#10034;
+  Press H to see the keyboard shortcuts
+  &#10034;
+  <a href='http://twitter.com/netzpirat' target='_parent'>@netzpirat</a>
+  &#10034;
+  <a href='http://twitter.com/_inossidabile' target='_parent'>@_inossidabile</a>
+</div>
+<iframe id='search_frame'></iframe>
+<div id='fuzzySearch'>
+  <input type='text'>
+  <ol></ol>
+</div>
+<div id='help'>
+  <p>
+    Quickly fuzzy find classes, mixins, methods, file:
+  </p>
+  <ul>
+    <li>
+      <span>T</span>
+      Open fuzzy finder dialog
+    </li>
+  </ul>
+  <p>
+    Control the navigation frame:
+  </p>
+  <ul>
+    <li>
+      <span>L</span>
+      Toggle list view
+    </li>
+    <li>
+      <span>C</span>
+      Show class list
+    </li>
+    <li>
+      <span>I</span>
+      Show mixin list
+    </li>
+    <li>
+      <span>F</span>
+      Show file list
+    </li>
+    <li>
+      <span>M</span>
+      Show method list
+    </li>
+    <li>
+      <span>E</span>
+      Show extras list
+    </li>
+  </ul>
+  <p>
+    You can focus and blur the search input:
+  </p>
+  <ul>
+    <li>
+      <span>S</span>
+      Focus search input
+    </li>
+    <li>
+      <span>Esc</span>
+      Blur search input
+    </li>
+  </ul>
+</div>
+  </body>
+</html>
