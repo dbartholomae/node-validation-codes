@@ -1,4 +1,7 @@
 # node-validation-codes@1.0.0
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/dbartholomae/node-validation-codes.svg)](https://greenkeeper.io/)
+
 An AMD-module to validate user input both on client and server side returning easily parseable error codes.
 
 Define a validator by combining rules:
