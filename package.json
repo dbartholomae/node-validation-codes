@@ -11,8 +11,8 @@
   "man": "./doc/index.html",
   "dependencies": {},
   "devDependencies": {
-    "mocha": "2.*",
-    "chai": "2.*",
+    "mocha": "^5.2.0",
+    "chai": "^4.2.0",
     "coffee-script": "1.*",
     "requirejs": "2.*"
   },
