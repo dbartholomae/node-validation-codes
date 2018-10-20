@@ -1,4 +1,5 @@
 # node-validation-codes@1.0.0
+## !!! This package is no longer maintained !!!
 An AMD-module to validate user input both on client and server side returning easily parseable error codes.
 
 Define a validator by combining rules:
